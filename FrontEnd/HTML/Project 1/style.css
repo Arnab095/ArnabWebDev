@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aqua;
+}
+ul {
+  background-color: yellow;
+  overflow: hidden;
+}
+li {
+  list-style-type: none;
+  float: left;
+}
+li a {
+  color: blue;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 30px;
+}
+.menu img {
+  height: 280px;
+  width: 400px;
+}
+.menu {
+  text-align: center;
+}
+.menu h4 {
+  padding: 20px 0;
+  font-size: 20px;
+}
