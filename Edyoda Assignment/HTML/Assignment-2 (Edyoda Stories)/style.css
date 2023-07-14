@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f6ff;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Topbar Section */
+
+header {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  padding: 16px 78px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 0px rgba(77, 68, 68, 0.75);
+  position: sticky;
+}
+
+.dropdown {
+  display: flex;
+  padding-left: 60px;
+}
+
+.logo h1 {
+  width: 130px;
+  font-size: 32px;
+  color: #0084ff;
+  font-weight: 900;
+}
+
+.logo-stories {
+  margin: 0;
+  font-weight: 500;
+
+  font-style: italic;
+}
+
+.dropdown p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dropdown .fa-sharp {
+  color: black;
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+/* Category Section */
+
+.categories {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-top: 16px;
+}
+
+.categories h1 {
+  color: #000;
+  font-weight: 600;
+
+  margin: 0;
+}
+
+.filter {
+  display: flex;
+  padding-top: 16px;
+}
+
+.filter p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.fa-sharp {
+  color: #0084ff;
+}
+
+.category {
+  margin: 20px 0;
+}
+
+.category a {
+  padding: 6px 14px;
+  width: auto;
+  color: #0084ff;
+  border-radius: 15px;
+  border: 1px solid #0084ff;
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.category .active-category {
+  background-color: #0084ff;
+  color: white;
+}
+
+/* Card Section */
+#container {
+  background-color: #f2f6ff;
+  padding: 13px;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  width: 31%;
+  display: inline-block;
+  background-color: #f2f6ff;
+  border-radius: 5px;
+  margin: 5px;
+  border: 1px solid rgb(91, 91, 156);
+  box-shadow: 2px 2px 2px gray;
+}
+
+.cardimage img {
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.cardtitle {
+  padding: 10px;
+
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.author-date {
+  text-align: left;
+  padding-left: 25px;
+}
+
+.author {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 500;
+  color: #0096ff;
+}
+
+.date {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.cardpara {
+  padding: 10px 24px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 4px 0;
+  line-height: 1.43;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Footer Section */
+
+.footerbox {
+  font-size: 30px;
+  color: white;
+  background-color: #172146;
+  text-align: center;
+  padding: 80px;
+}
+
+.copyrightbox {
+  background-color: blueviolet;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto Mono", monospace;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite Foods Webapp</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      header li {
+        float: left;
+      }
+
+      header li a {
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      header li a:hover {
+        background-color: #111;
+      }
+
+      .text-content {
+        text-decoration: none;
+        color: indigo;
+      }
+
+      .text-content ul {
+        text-decoration: none;
+        color: black;
+        margin-left: 20px;
+      }
+
+      .text-content a {
+        font-size: larger;
+        text-decoration: none;
+        color: maroon;
+      }
+
+      .labels {
+        font-size: large;
+        font-weight: bold;
+        margin-left: 450px;
+        margin-bottom: 40px;
+      }
+
+      .images {
+        width: 67%;
+        margin: 0 auto;
+      }
+
+      .fooditem {
+        width: 1000px;
+        height: 500px;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: gray">
+    <header>
+      <ul>
+        <li><a href="#">Index</a></li>
+        <li><a href="#">Food</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </header>
+    <div class="main">
+      <div class="text-content">
+        <h1>Top 5 Favorite Foods</h1>
+        <hr />
+        <ul>
+          <li><a href="#biryani">Biryani</a></li>
+          <li><a href="#burger">Burger</a></li>
+          <li><a href="#green-salad">Green salad</a></li>
+          <li><a href="#pancake">Pancake</a></li>
+          <li><a href="#sandwich">Sandwich</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="images">
+      <div id="biryani">
+        <img
+          src="https://images.pexels.com/photos/14731635/pexels-photo-14731635.jpeg"
+          class="fooditem"
+        />
+      </div>
+      <p class="labels">Biryani</p>
+      <div id="burger">
+        <img
+          src="https://images.pexels.com/photos/2271107/pexels-photo-2271107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          class="fooditem"
+        />
+      </div>
+      <p class="labels">Burger</p>
+      <div id="green-salad">
+        <img
+          src="https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&w=600"
+          class="fooditem"
+        />
+      </div>
+      <p class="labels">Green Salad</p>
+      <div id="pancake">
+        <img
+          src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=600"
+          class="fooditem"
+        />
+      </div>
+      <p class="labels">Pancake</p>
+      <div id="sandwich">
+        <img
+          src="https://images.pexels.com/photos/13689827/pexels-photo-13689827.jpeg?auto=compress&cs=tinysrgb&w=600"
+          class="fooditem"
+        />
+      </div>
+      <p class="labels">Sandwich</p>
+    </div>
+  </body>
+</html>

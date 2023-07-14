@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Food App</title>
+    <style>
+      header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      header li {
+        float: left;
+      }
+
+      header li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      header li a:hover {
+        background-color: #111;
+      }
+      .text-content a {
+        text-decoration: none;
+        color: black;
+      }
+      .images {
+        width: 50%;
+        margin: 0 auto;
+      }
+      .labels {
+        margin-left: 240px;
+        margin-bottom: 40px;
+      }
+      .fooditem {
+        width: 500px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body style="padding: 0px; margin: 0px; background-color: grey">
+    <header>
+      <ul>
+        <li><a href="#">Index</a></li>
+        <li><a href="#">Food</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </header>
+    <div class="main">
+      <div class="text-content">
+        <h2>Top 5 favourite foods</h2>
+        <ul>
+          <li><a href="#biryani">Biryani</a></li>
+          <li><a href="#cake">Cake</a></li>
+          <li><a href="#pizza">Pizza</a></li>
+          <li><a href="#donuts">Donuts</a></li>
+          <li><a href="#wings">Wings</a></li>
+        </ul>
+      </div>
+      <div class="images">
+        <div id="biryani">
+          <img
+            src="https://media.istockphoto.com/photos/hyderabadi-biryani-a-popular-chicken-or-mutton-rice-preparation-picture-id466089615?k=6&m=466089615&s=612x612&w=0&h=5WfuPs3LPpKyRQers3H2ZmKYLb5pZoXHfXAaLRpfFV8="
+            class="fooditem"
+          />
+        </div>
+        <p class="labels">Biryani</p>
+        <div id="cake">
+          <img
+            src="https://d2z4fd79oscvvx.cloudfront.net/0027672_birthday_chocolate_cake_385.jpeg"
+            class="fooditem"
+          />
+        </div>
+        <p class="labels">Cake</p>
+        <div id="pizza">
+          <img
+            src="https://image.shutterstock.com/image-photo/supreme-pizza-lifted-slice-1-260nw-84904912.jpg"
+            class="fooditem"
+          />
+        </div>
+        <p class="labels">Pizza</p>
+        <div id="donuts">
+          <img
+            src="https://images.pexels.com/photos/2955820/pexels-photo-2955820.jpeg?auto=compress&cs=tinysrgb&w=600"
+            class="fooditem"
+          />
+        </div>
+        <p class="labels">Donuts</p>
+        <div id="wings">
+          <img
+            src="https://foxeslovelemons.com/wp-content/uploads/2016/10/Everything-Bagel-Chicken-Wings-2-735x490.jpg"
+            class="fooditem"
+          />
+        </div>
+        <p class="labels">Wings</p>
+      </div>
+    </div>
+  </body>
+</html>
