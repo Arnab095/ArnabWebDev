@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doubts Clearing Session</title>
+  </head>
+
+  <body>
+    <h1>Doubts Clearing Session</h1>
+  </body>
+  <script>
+    var message = "Hello this is my JS class Hello";
+    // 1.length --> to find the length
+    // console.log(message.length);
+
+    // 2.toUpperCase -->
+    // console.log(message.toUpperCase());
+
+    // 3.toLowerCase -->
+    // console.log(message.toLowerCase());
+
+    var msg = "JavaScript";
+    // index -->Return the position of the character, it will start from 0 to length-1(n-1)
+    // console.log(message.indexOf("Hello"));
+    // indexOf --> First matching position
+
+    // console.log(message.lastIndexOf("Hello"));
+    // note: if index or character not available in the string it will be return "-1" in the console
+
+    // charAt --> return the character from the specified index
+    // console.log(message.charAt("4"));
+
+    // concat
+    var str1 = "Hi";
+    var str2 = "This";
+    var str3 = "My JS class";
+    // console.log(str1 + " " + str2 + " " + str3);
+    // note: for add some space in string we have to add double quotation between two string this is recomanded
+    // console.log(str1.concat(str2, str3));
+
+    // trim -->remove extra space from beginning and end of the string
+    var data = "  Hi      How are You   ";
+    // console.log(data);
+    // console.log(data.trim());
+    // console.log(data.replace(/\s\s+/g, " ")); //=>regular expression=regEx
+
+    //slice=>slice(start,end)
+    var messages = "Welcome to MycClass";
+
+    // console.log(messages.slice(0, 5));
+    // console.log(messages.slice(-10, -5));
+
+    // input++ =>Post increment ->take the value then increment
+    // ++input =>Pre increment ->increment first then take the value
+    var input = 7;
+    var output1 = ++input + ++input + ++input; //=>8+9+10=27
+    var output2 = input++ + input++ + input++; //=>10+11+12=33
+    var output3 = input++ + ++input + input++; //=>13+15+15=43
+
+    // console.log(output1 + " " + output2 + " " + output3);
+
+    // chaining of method /////////////////////////////////////////////
+    var messages = "Welcome to MycClass";
+    var result = messages.slice(0, 5);
+    // console.log(result);
+    var resultindex = result.indexOf("l");
+    // console.log(resultindex);
+
+    // console.log(messages.slice(0, 5).indexOf("l")); //this is called chaining of method
+
+    // truthy values
+    // falsy values
+    /*
+    false
+    0
+    null
+    undefined
+    " " --->this is some single spaces or called empty strings
+    note: apart from this all are truthy values
+    */
+
+    if (false == 0) {
+      console.log("falsy values");
+    } else {
+      console.log("truthy values");
+    }
+
+    var x = "10"; //-->assign value to variable
+    x == 10; //-->check the value if its matching or not
+    x === 10; //-->it will check for both data and value
+
+    if (x === 10) {
+      console.log("hi");
+    }
+
+    // data types
+    // 1.Primitive=>Number,Boolean,undefined,null,string
+    // 2.Non Primitive=>Object,Array=>this is called as a reference data types
+
+    ///////////////////////////////// solve some question /////////////////////////////////
+
+    // Problem No. 1
+    // Any one above 18 years old can have DL
+    // you can have DL
+    // else you cant have DL
+    var age = 28;
+    if (age >= 18) {
+      console.log("You can have DL");
+    } else {
+      console.log("You can't have DL");
+    }
+
+    // An other way (short hand property of "if and else" condition)
+    age >= 18 ? console.log("Ok") : console.log("Not Ok");
+    //-->this is called ternary operator
+
+    // Problem No. 2
+    // Calculate the price of ticket based on user age
+    // 0-10-->20RS
+    // 11-20-->30RS
+    // 21-30-->40RS
+    // Above 30-->50RS
+
+    // if else ladder
+    var userAge = 31;
+    var ticketPrice = 0;
+    if (userAge >= 0 && userAge <= 10) {
+      ticketPrice = 20;
+    } else if (userAge >= 11 && userAge <= 20) {
+      ticketPrice = 30;
+    } else if (userAge >= 21 && userAge <= 30) {
+      ticketPrice = 40;
+    } else {
+      ticketPrice = 50;
+    }
+    // console.log("Ticket Cost:", ticketPrice);
+
+    // Difference between &&-operator and ||-operator
+    // &&-->this operator check that both condition should be true other wise its not work
+    // ||-->this operator check that any of the condition should be true
+
+    //enteredAlphabet=d
+    // var enterd=enteredAlphabet.lowerCase()
+    // //switch(enterd)
+    // case:'a'
+    // result=true
+    // }
+
+    // var x=prompt("enter number")
+    // console.log(x)
+
+    // var input=10
+    //     var input=12
+    //       var oper=-
+    // switch(oper){
+    //     case:'+'
+
+    // }
+  </script>
+</html>
