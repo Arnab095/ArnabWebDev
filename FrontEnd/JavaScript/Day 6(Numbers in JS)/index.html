@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numbers in JS</title>
+  </head>
+
+  <body>
+    <h2>Numbers in JS</h2>
+  </body>
+  <script>
+    let a = 123;
+    a = a.toString();
+    console.log(a);
+    console.log(a.toString());
+    console.log(typeof a);
+
+    // ValueOf()
+    // toPrecision()
+    // toFixed()
+    // toExponential()
+
+    console.log(Number(true));
+    console.log(Number(false));
+
+    console.log(Number("100"));
+    console.log(Number(100));
+
+    console.log(Number("Jayesh"));
+    console.log(Number("100.456,33.5"));
+    console.log(Number("100 335"));
+
+    console.log(Number.isInteger("Arnab"));
+    console.log(Number.isInteger("1000"));
+    console.log(Number.isInteger(1000));
+
+    // ParseInt -->changing the input to integer
+    console.log(parseInt("-100"));
+    console.log(parseInt("100.5678"));
+    console.log(typeof parseInt("100"));
+    console.log(parseInt("Jayesh Vyas"));
+    console.log(parseInt("10 10"));
+    console.log(parseInt("hiuo 100"));
+    console.log(parseInt("100 abcdefgh"));
+
+    // range of the integers
+    // from -2,147,483,647 to 2,147,483,647
+
+    // ParseFloat
+    console.log(parseFloat("10"));
+    console.log(parseFloat("100.123456789123456789123456789"));
+    console.log(parseFloat("100 600"));
+    console.log(parseFloat("100 Arnab"));
+    console.log(parseFloat("Arnab 100 Arnab"));
+
+    console.log(Number.MAX_VALUE);
+    console.log(Number.MIN_VALUE);
+
+    
+  </script>
+</html>
