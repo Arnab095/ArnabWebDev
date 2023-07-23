@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  padding: 15vh;
+}
+
+/* section {
+    display: block;
+} */
+
+#clothes-box {
+  display: flex;
+  justify-content: center;
+  padding: 0 4%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+  /* flex-grow: 5; */
+  background-color: #fff;
+}
+
+#accessories-box {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 0 4%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: auto;
+  flex-grow: 5;
+  /* flex: 5 0 50px; */
+}
+
+#clothes-box h2,
+#accessories-box h2 {
+  text-align: left;
+}
+
+.sec-title {
+  /* margin-top: 100px; */
+  /* margin-left: 10px; */
+  color: rgb(27, 25, 25);
+}
+
+.card {
+  width: 100px;
+  min-width: 200px;
+  height: auto;
+  margin: 30px 10px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  /* display: block; */
+}
+
+.card img {
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.card .details {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px auto;
+}
+
+.details h3 {
+  /* background-color: aquamarine; */
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: rgb(27, 25, 25);
+}
+
+.details h4 {
+  color: rgb(110, 110, 110);
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.details h5 {
+  color: #009688;
+  font-size: 15px;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+@media screen and (max-width: 666px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #accessories-box,
+  #clothes-box {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  .card {
+    padding: auto;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+  }
+
+  .card::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
