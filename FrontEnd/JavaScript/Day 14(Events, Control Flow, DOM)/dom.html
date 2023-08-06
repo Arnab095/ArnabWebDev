@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom in JS</title>
+    <script type="text/javaScript" src="dom.js"></script>
+  </head>
+  <body>
+    <h2 class="header">DOM in JS</h2>
+    <div id="demo1">
+      <p id="demo">Hello Jayesh</p>
+      <p id="demo3">Hello Jayesh</p>
+    </div>
+    <p class="jsintro">JS classes in Edyoda by Jayesh Vyas</p>
+    <p class="jsintro">JS classes in Edyoda by Vinit Vyas</p>
+    <p class="jsintro">JS classes in Edyoda by Vinit Vyas</p>
+    <p class="jsintro">JS classes in Edyoda by Vinit Vyas</p>
+    <p class="jsintro">JS classes in Edyoda by Vinit Vyas</p>
+    <p class="jsintro">JS classes in Edyoda by Vinit Vyas</p>
+  </body>
+  <script>
+    /*
+    // getElementById-ClassName-TagName
+    const ele = document.getElementById("demo");
+    console.log(ele);
+    const header = document.getElementsByClassName("header");
+    console.log(header);
+    const ele1 = document.getElementsByTagName("p");
+    console.log(ele1);
+    */
+
+    const ele = document.querySelectorAll("p.jsintro");
+    // document.getElementById("demo3").innerHTML = ele[0].innerHTML;
+    document.getElementById("demo3").innerHTML = ele[1].innerHTML;
+    alert(ele.length);
+
+    for (let i = 0; i < ele.length; i++) {
+      console.log(ele[i]);
+    }
+  </script>
+</html>
