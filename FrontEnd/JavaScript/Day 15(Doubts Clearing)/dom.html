@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM doubts clearing</title>
+  </head>
+  <body>
+    <h1>All about DOM</h1>
+    <p id="para" class="city">Arnab</p>
+    <p>Hello City</p>
+    <p>Hello Kolkata</p>
+    <p>Hello Dehli</p>
+    <p>Hello Pune</p>
+    <p>Hello Indore</p>
+    <p>Hello Durgapur</p>
+  </body>
+  <script>
+    // document.getElementById("para").innerHTML = "Jana";
+    // document.getElementsByTagName("p")[1].innerHTML = "Hello World";
+    // document.getElementsByClassName("city")[0].innerHTML = "KOLKATA";
+    
+    for (let i = 0; i < document.getElementsByTagName("p").length; i++) {
+      document.getElementsByTagName("p")[i].innerHTML = "HOME";
+    }
+  </script>
+</html>
