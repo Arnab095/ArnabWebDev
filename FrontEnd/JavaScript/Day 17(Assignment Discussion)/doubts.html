@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doubts</title>
+  </head>
+  <body>
+    Enter your name : <input type="text" id="fnm" onkeydown="Functa()" />
+    <p>
+      When the function a is triggered then the input text gets converted into
+      upper case
+    </p>
+  </body>
+  <script>
+    /*
+      function f1() {
+        console.log("Hello from function1");
+        function f2() {
+          console.log("Hello from function2");
+        }
+        f2();
+      }
+      f1();
+      */
+
+    function Functa() {
+      var p = document.getElementById("fnm");
+      p.value = p.value.toUpperCase();
+    }
+  </script>
+</html>
