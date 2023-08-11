@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Question - JS</title>
+  </head>
+  <body>
+    <h1>Practice Question - JS</h1>
+    <button id="btn-login">Login</button>
+  </body>
+  <script>
+    var btn = document.getElementById("btn-login");
+    btn.onclick = function () {
+      console.log("First Click");
+    };
+    btn.onclick = function () {
+      console.log("Second Click");
+    };
+    btn.addEventListener("click", function () {
+      console.log("Third Click");
+    });
+    btn.addEventListener("click", function () {
+      console.log("Fourth Click");
+    });
+  </script>
+</html>
