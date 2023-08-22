@@ -1,0 +1,13 @@
+OOPS-> Object Oriented Programming
+this-> It refers the current context
+Encapsulation-> Wrapping up of data and functions in a single entity
+Class-> Collection of data and functions
+     ->collection of data members and member functions
+Constructor..
+Object Instantiation-> Instatiate object by using new keyword
+Inharitance-> Acquires a properties from its parent
+
+Prototype Chaining-> If we use some method that not available in an object, then it pass up in the top level hierarchy/parent
+//a//toString()
+    //b toString()
+        //c= toString()
