@@ -60,9 +60,13 @@ audioPlayer.addEventListener('timeupdate', function(){
     progress.style.width = (audioPlayer.currentTime / audioPlayer.duration)*100 + '%'
 })
 
-let arr = [1,2,3,4,5]
 
-localStorage.setItem('name', JSON.stringify(arr))
-localStorage.setItem('institute', 'Edyoda')
 
-console.log(JSON.parse(localStorage.getItem('name')))
+
+// Final project explaination
+// let arr = [1,2,3,4,5]
+
+// localStorage.setItem('name', JSON.stringify(arr))
+// localStorage.setItem('institute', 'Edyoda')
+
+// console.log(JSON.parse(localStorage.getItem('name')))
